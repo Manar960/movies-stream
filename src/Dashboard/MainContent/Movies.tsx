@@ -1,4 +1,3 @@
-import React from 'react';
 import squad from '../../assets/Rectangle 7.png';
 import dune from '../../assets/Rectangle 8.png';
 import Movies2 from './Movies2';
