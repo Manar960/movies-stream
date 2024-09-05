@@ -6,7 +6,7 @@ const Movies2 = () => {
   return (
     <div className="pt-5">
       <div className="heading ps-4">
-        <h3 className="d-flex align-items-center discover">
+        <h3 className="d-flex align-items-center">
           Continue watching <span className="ms-2">(3 Movies Remaining)</span>
           <button type="button" className="btn btn-outline-warning ms-5">
             See more
