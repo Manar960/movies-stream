@@ -22,7 +22,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      prettier: prettierPlugin, // Add Prettier plugin
+      prettier: prettierPlugin,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -30,7 +30,8 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      'prettier/prettier': 'warn', // Add Prettier as a rule
+      'prettier/prettier': 'warn',
+      endOfLine: 'auto',
     },
   }
 );

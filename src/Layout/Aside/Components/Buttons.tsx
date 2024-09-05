@@ -2,7 +2,7 @@ import icon from "../../../assets/Icon.png";
 
 const Buttons = () => {
   return (
-    <div className="d-flex pt-5 mt-5 toggle-switch justify-space-between">
+    <div className="d-flex pt-5 my-4 toggle-switch">
       <div className="toggle-switch-container">
         <div className="form-check form-switch">
           <input

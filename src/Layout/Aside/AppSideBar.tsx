@@ -1,16 +1,37 @@
+import { useState } from 'react';
 import Buttons from './Components/Buttons';
 import SideBar from './Components/SideBar';
 import Users from './Components/Users';
+import './Components/AppSideBar.css';
 
 const AppSideBar = () => {
-  return (
-    <div className=" d-flex flex-column">
-      <div className="main-side">
-        <SideBar />
-        <Users />
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <Buttons />
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <button
+        className="btn btn-outline-warning toggle-btn d-sm-block d-md-none"
+        onClick={toggleSidebar}
+      >
+        ☰
+      </button>
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <div className="sidebar-content mt-2">
+          <SideBar />
+          <Users />
+          <Buttons />
+        </div>
+      </div>
+      {isOpen && (
+        <div
+          className="overlay d-sm-block d-md-none"
+          onClick={toggleSidebar}
+        ></div>
+      )}
     </div>
   );
 };
