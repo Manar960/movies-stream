@@ -32,8 +32,8 @@ const services: MediaServiceItemProps[] = [
 const MediaService: React.FC = () => {
   return (
     <div className="mb-5">
-      <h3 className="fs-5 pt-2">MediaService</h3>
-      <div className="media pt-5">
+      <h3 className="fs-5 pt-2">Media Service</h3>
+      <div className="media pt-5 pe-2">
         {services.map((service, index) => (
           <MediaServiceItem
             key={index}

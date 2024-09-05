@@ -3,7 +3,7 @@ import MediaService from './Components/MediaService';
 
 const RightSideBar = () => {
   return (
-    <div className="RightSideBar pt-5 ps-4">
+    <div className="RightSideBar pt-5 ps-3 d-none d-sm-block d-md-block">
       <MediaService />
       <Genre />
     </div>
