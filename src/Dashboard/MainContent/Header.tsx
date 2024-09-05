@@ -25,11 +25,12 @@ const Header = () => {
 
           <input
             type="text"
-            className="search-input"
+            className="search-input ps-2"
             placeholder="Search here...."
+            style={{color:'black'}}
           />
         </div>
-        <img  src={control} width={'40px'} height={'40px'} />
+        <img  src={control} style={{maxWidth:'35px'}} />
       </div>
     </div>
   );

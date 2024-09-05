@@ -1,9 +1,9 @@
-import MainContent from "./MainContent/MainContent";
-import RightSideBar from "./RightSideBar/RightSideBar";
+import MainContent from './MainContent/MainContent';
+import RightSideBar from './RightSideBar/RightSideBar';
 
 const Dashboard = () => {
   return (
-    <div className="d-flex MainContent ">
+    <div className="MainContent d-flex">
       <MainContent />
       <RightSideBar />
     </div>
