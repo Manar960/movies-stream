@@ -4,12 +4,10 @@ import AppSideBar from './Aside/AppSideBar';
 const MasterLayout = () => {
   return (
     <>
-      <div className="sidebar">
-        <AppSideBar />
-      </div>
-      <div>
+      <AppSideBar />
+      <div className="content">
         <Outlet />
-      </div>
+      </div>{' '}
     </>
   );
 };
