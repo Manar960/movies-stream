@@ -25,8 +25,7 @@ const Movies = () => {
         <img
           src={f3}
           alt="Movie 3"
-          className=" mb-3 mt-5 ps-4"
-          style={{ maxWidth: '330px', height: 'auto' }}
+          className="image-hover mb-3 mt-5 ps-4"
         />
       </section>
     </div>
