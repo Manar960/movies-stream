@@ -34,7 +34,7 @@ const SideBar = () => {
   return (
     <div className="sidebar-container d-flex flex-column align-items-center">
       <img src={ProfileImg} alt="Profile" className="profile-img" />
-      <div className="main-container d-flex flex-column">
+      <div className="main-container d-flex flex-column pt-5">
         {sidebarItems.map((item, index) => (
           <SidebarItem key={index} {...item} />
         ))}
